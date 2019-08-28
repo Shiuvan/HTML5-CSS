@@ -71,19 +71,11 @@
     outline: none;
 }
 
-/*.main-header-photo {
-    width: 469px;
-    height: 214px;
-    display: block;
-    background-color: #fff;
-    float: right;*/
-}
-
 .about-product {
     width: 100%;
     background-color: white;
-    padding: 50px;
     box-sizing: border-box;
+    padding: 50px;
 }
 
 .about-product:after {
@@ -103,13 +95,10 @@
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    padding-top: 49px;
-    padding-left: 50px;
 }
 
 .about-product_p1 {
     margin-top: 30px;
-    margin-left: 50px;
     color: #333333;
     font-size: 16px;
     font-weight: 400;
@@ -118,7 +107,6 @@
 
 .about-product_p2 {
     margin-top: 20px;
-    margin-left: 50px;
     color: #333333;
     font-size: 16px;
     font-weight: 400;
@@ -130,8 +118,6 @@
     width: 430px;
     height: 245px;
     background-color: #445161;
-    margin-top: 50px;
-    margin-right: 50px;
 }
 
 .dignity {
@@ -291,9 +277,20 @@ summary::before {
 }
 
 .review-text {
-    background-image: url(../img/bg_review.png);
+    background-color: #ebebeb;
+    border-radius: 10px;
     width: 84.4%;
     margin-left: 91px;
+    position: relative;
+}
+
+.review-text:before {
+    content: "";
+    border: 12px solid transparent;
+    border-right: 12px solid #ebebeb;
+    position: absolute;
+    left: -24px;
+    top: 20px;
 }
 
 .review-citate {
@@ -363,6 +360,7 @@ summary::before {
 }
 
 .buy-it-now_minititle {
+    display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: #ffffff;
@@ -375,6 +373,7 @@ summary::before {
 }
 
 .buy-it-now_price {
+    display: block;
     color: #445162;
     font-size: 40px;
     font-weight: 400;
@@ -420,6 +419,15 @@ summary::before {
     margin-left: 20px;
     margin-bottom: 20px;
     border: none;
+    outline: none;
+}
+
+.buy-it-now_button:hover {
+    background-color: aliceblue;
+}
+
+.buy-it-now_button:active {
+    background-color:cadetblue;
 }
 
 .contacts {
@@ -461,6 +469,7 @@ summary::before {
     font-weight: 400;
     line-height: 24px;
     color: #445162;
+    outline: none;
 }
 
 .contacts-email {
@@ -477,6 +486,7 @@ summary::before {
     font-weight: 400;
     line-height: 24px;
     color: #445162;
+    outline: none;
 }
 
 .contacts-message {
@@ -495,6 +505,7 @@ summary::before {
     font-weight: 400;
     line-height: 24px;
     resize: none;
+    outline: none;
 }
 
 .contacts-button {
@@ -512,6 +523,15 @@ summary::before {
     border-radius: 5px;
     margin-left: 380px;
 }
+
+.contacts-button:hover {
+    background-color: aliceblue;
+}
+
+.contacts-button:active {
+    background-color:cadetblue;
+}
+
 
 .contacts-menu {
     margin-left: 272px;
@@ -616,6 +636,34 @@ summary::before {
 
 .contacts-socialiko {
     margin-left: -35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sign {
+    width: 55px;
+    min-height: 55px;
+    background-image: url(../img/Slice_4.png)
+}
+
+.sign:nth-child(1) {
+    background-position: 0 0;
+}
+
+.sign:nth-child(2) {
+    background-position: -55px 0;
+}
+
+.sign:nth-child(3) {
+        background-position: -104px;
+}
+
+.sign:nth-child(4) {
+        background-position: -153px 0;
+}
+
+.sign:nth-child(5) {
+       background-position: -204px 0;
 }
 
 .copyright {
